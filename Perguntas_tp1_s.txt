@@ -1,0 +1,38 @@
+python_redes
+
+2- 
+
+
+a)variaveis é um espaço na memoria, onde são guardados valores que podem mudar de valor ao longo do tempo 
+
+b) Atraves do dicionario e com o nome da variavel e valor, e com o caminho diretorio do usuario faça o print(os.environ['nome do arquivo'])
+
+c) o comando 'print(os.getcwd()) apresentao o PID do proprio processo em execução 
+
+
+4- 
+
+a) para saber o caminho absoluto do diretório, tem que usar print(os.listdir('C:\\Users\\'))
+
+5- 
+
+
+10- A diferença está nos primeiro e último argumentos de os.spawnv. O primeiro argumento indica que é para esperar o processo terminar antes de retornar ao processo que criou.
+O segundo argumento deve ser uma lista de strings não vazias, diferentemente da função os.spawnl (que é só uma string).
+
+11- 
+   
+  a) import os
+      executavel_com_path = os.environ['SYSTEMROOT'] + '\\System32\\calc.exe'
+      os.spawnl(os.P_NOWAIT, executavel_com_path, " ")
+
+  b) import subprocess
+    print(subprocess.run("calc"))
+
+
+14 A função psutil.process_iter() é equivalente a psutil.pids().
+ Ela retorna a lista de processos que estão executando na máquina. 
+A diferença está na forma como é implementada,
+ de modo que seja mais eficiente quando executado repetidamente (em iterações).
+
+
