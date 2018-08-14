@@ -1,5 +1,9 @@
-#Escreva um programa em Python usando o módulo ‘psutil’,
-#que imprima para a partição corrente:
+# INSTITUTO INFNET RIO DE JANEIRO
+# ALUNO: MATHEUS ANDRÉ DE LIMA VARGAS
+# GRADUAÇÃO EM ENGENHARIA DA COMPUTAÇÃO
+# TESTE DE PERFORMANCE I PYTHON
+# PROF.: THAIS VIANA
+# EXERCÍCIO 20
 
 import psutil
 #A : nome do dispositivo

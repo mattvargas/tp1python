@@ -1,13 +1,13 @@
-# Escreva um programa em Python, usando o módulo ‘psutil’, que imprima em GB,
-#quanto de memória principal e quanto de memória de paginação (swap) existem no
-#computador.
-
+# INSTITUTO INFNET RIO DE JANEIRO
+# ALUNO: MATHEUS ANDRÉ DE LIMA VARGAS
+# GRADUAÇÃO EM ENGENHARIA DA COMPUTAÇÃO
+# TESTE DE PERFORMANCE I PYTHON
+# PROF.: THAIS VIANA
+# EXERCÍCIO 18
 
 import psutil
 
-
 disco = psutil.swap_memory()
-hd = round(disco.total/(1024*1024), 2)
+hd = round(disco.total / (1024 * 1024), 2)
 print(hd, "GB")
-  
-  
+

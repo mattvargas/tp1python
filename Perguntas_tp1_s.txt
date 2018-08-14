@@ -1,38 +1,49 @@
-python_redes
-
-2- 
-
-
-a)variaveis È um espaÁo na memoria, onde s„o guardados valores que podem mudar de valor ao longo do tempo 
-
-b) Atraves do dicionario e com o nome da variavel e valor, e com o caminho diretorio do usuario faÁa o print(os.environ['nome do arquivo'])
-
-c) o comando 'print(os.getcwd()) apresentao o PID do proprio processo em execuÁ„o 
+# INSTITUTO INFNET RIO DE JANEIRO
+# ALUNO: MATHEUS ANDR√â DE LIMA VARGAS
+# GRADUA√á√ÉO EM ENGENHARIA DA COMPUTA√á√ÉO
+# TESTE DE PERFORMANCE I PYTHON
+# PROF.: THAIS VIANA
+# EXERC√çCIOS DE PERGUNTAS
 
 
-4- 
+# EXERC√çCIO 2
 
-a) para saber o caminho absoluto do diretÛrio, tem que usar print(os.listdir('C:\\Users\\'))
+a) R.: Variav√©is s√£o espa√ßos na memoria, onde s√£o guardados valores que podem mudar de valor ao longo do tempo
 
-5- 
+b) R.: Atrav√©s do dicion√°rio, com o nome da vari√°vel,  valor e com o caminho diret√≥rio do usuario fa√ßa o print(os.environ['nome do arquivo'])
+
+c) R.: O comando print(os.getcwd()) apresenta o o PID do pr√≥prio processo que est√° em execu√ß√£o.
 
 
-10- A diferenÁa est· nos primeiro e ˙ltimo argumentos de os.spawnv. O primeiro argumento indica que È para esperar o processo terminar antes de retornar ao processo que criou.
-O segundo argumento deve ser uma lista de strings n„o vazias, diferentemente da funÁ„o os.spawnl (que È sÛ uma string).
+# EXERC√çCIO 4
 
-11- 
-   
-  a) import os
+a) R.: Para saber o caminho absoluto do diret√≥rio, √© necess√°rio usar print o (os.listdir('C:\\Users\\'))
+
+# EXERC√çCIO 5
+
+
+# EXERC√çCIO 10
+
+R.: A diferen√ßa est√° no primeiro e √∫ltimo argumento de os.spawnv. O primeiro argumento indica que √© para esperar o processo terminar antes de retornar ao processo que originou.
+O segundo argumento deve ser uma lista de strings n√£o vazias, diferente da fun√ß√£o os.spawnl que √© uma s√≥ string.
+
+# EXERC√çCIO 11
+
+  a) R.:
+
+      import os
       executavel_com_path = os.environ['SYSTEMROOT'] + '\\System32\\calc.exe'
       os.spawnl(os.P_NOWAIT, executavel_com_path, " ")
 
-  b) import subprocess
+  b) R.:
+
+    import subprocess
     print(subprocess.run("calc"))
 
 
-14 A funÁ„o psutil.process_iter() È equivalente a psutil.pids().
- Ela retorna a lista de processos que est„o executando na m·quina. 
-A diferenÁa est· na forma como È implementada,
- de modo que seja mais eficiente quando executado repetidamente (em iteraÁıes).
+# EXERC√çCIO 14
+
+R.: A fun√ß√£o psutil.process_iter() equivale a fun√ß√£o psutil.pids(). As duas retornam a lista de processos que est√£o sendo executados na m√°quina.  A diferen√ßa est√° na forma como s√£o implementadas,
+ pois podem ser mais eficiente quando executadas repetidamente em itera√ß√µes.
 
 

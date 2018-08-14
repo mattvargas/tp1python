@@ -1,9 +1,11 @@
-#Escreva um programa em Python, usando o módulo ‘psutil’, que imprima em GB, quanto
-#de armazenamento disponível há na partição do sistema (onde o sistema está instalado).
+# INSTITUTO INFNET RIO DE JANEIRO
+# ALUNO: MATHEUS ANDRÉ DE LIMA VARGAS
+# GRADUAÇÃO EM ENGENHARIA DA COMPUTAÇÃO
+# TESTE DE PERFORMANCE I PYTHON
+# PROF.: THAIS VIANA
+# EXERCÍCIO 19
 
 import psutil
 
-
 disco = psutil.disk_usage(path='C:')
 print(disco.total)
-
